@@ -76,12 +76,18 @@ textarea {
   width: 30px;
   height: 30px;
 }
+
 #brand-logo {
   width: 200px;
   height: 50px;
 }
 
-a{
+.logo-social-small-screen {
+  display: none;
+}
+
+
+a {
   text-decoration: none;
 }
 
@@ -109,15 +115,19 @@ a{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding-top: 850px;
+  padding-top: 350px;
 }
 
 .hero h1 {
   color: var(--variable-collection-background-color);
+  -webkit-text-stroke: 4px black;
+  paint-order: stroke fill;
 }
 
 .hero h3 {
   color: var(--variable-collection-background-color);
+  -webkit-text-stroke: 5px black;
+  paint-order: stroke fill;
 }
 
 .hero a {
@@ -170,11 +180,11 @@ a{
 
 .about-us h3 {
   width: 400px;
-  
+
 }
 
 .content-about-us {
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   word-break: keep-all;
@@ -184,14 +194,14 @@ display: flex;
   padding-bottom: 15px;
 }
 
-#about-us-img{
+#about-us-img {
   display: flex;
   justify-content: center;
   height: 400px;
 }
 
 /* -- Form contact -- */
-.contact-form{
+.contact-form {
   margin-top: 15px;
 }
 
@@ -239,9 +249,9 @@ display: flex;
 }
 
 /* -- Media 1440 -- */
-@media (max-width: 1440px){
-  .hero{
-    padding-top: 650px;
+@media (max-width: 1440px) {
+  .hero {
+    padding-top: 250px;
   }
 }
 
@@ -249,17 +259,19 @@ display: flex;
 /* -- Media 991 -- */
 @media (max-width: 991px) {
 
-  .hero{
-    padding-top: 450px;
+  .hero {
+    padding-top: 150px;
   }
 
-  h1{
+  h1 {
     font-size: 28px;
   }
-  h2{
+
+  h2 {
     font-size: 24px;
   }
-  h3{
+
+  h3 {
     font-size: 20px;
   }
 
@@ -278,10 +290,19 @@ display: flex;
 
 /* -- Media 578px -- */
 @media (max-width: 578px) {
-  .hero {
-    padding-top: 250px;
+
+  .logo-social-small-screen {
+    display: initial;
   }
 
+  .logo-social-small-screen-navbar {
+    display: none;
+  }
+
+  .hero {
+    background-image: url(../assets/Hero-background-image-2.png);
+    padding-top: 550px;
+  }
 
   .button-consulta button {
     width: 150px;
@@ -307,10 +328,26 @@ display: flex;
     font-size: 20px;
   }
 
-  .hero h3 {
-    display:none;
+  .hero-description-desktop {
+    display: none;
   }
+
   h3 {
     font-size: 16px;
   }
+
+  /* -- Media 450px --*/
+  @media(max-width: 450px) {
+    .hero {
+      padding-top: 450px;
+    }
+  }
+
+  /* -- Media 378px --*/
+  @media(max-width: 375px) {
+    .hero {
+      padding-top: 350px;
+    }
+  }
+
 }

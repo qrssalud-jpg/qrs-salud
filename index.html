@@ -19,7 +19,7 @@
 <body>
     <!-- Header start -->
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand mb-0" href="#">
                 <img src="assets/logo-image.png" alt="Logo" id="brand-logo">
             </a>
@@ -28,7 +28,7 @@
                     class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="narbarNav">
-                <ul class="navbar-nav align-items-end">
+                <ul class="navbar-nav align-items-end px-3">
                     <li class="nav-item">
                         <a class="nav-link active" id="NavBar-A" href="#hero">Ir al inicio</a>
                     </li>
@@ -41,17 +41,33 @@
                     <li class="nav-item">
                         <a class="nav-link active" id="NavBar-A" href="#contact">Contáctanos</a>
                     </li>
+                    <li class="nav-item">
+                        <div class="logo-social-small-screen">
+                            <a href="mailto:qrs.salud@gmail.com"><img src="assets/gmail.png" alt="mail"
+                                    id="logo-social"></a>
+                            <a href="https://www.facebook.com"><img src="assets/facebook.png" alt="facebook"
+                                    id="logo-social"></a>
+                            <a href="https://www.instagram.com/qrssalud"><img src="assets/instagram.png" alt="instagram"
+                                    id="logo-social"></a>
+                            <a
+                                href="https://api.whatsapp.com/send?phone=+541168563373&text=Hola me interesa saber más."><img
+                                    src="assets/whatsapp.png" alt="whatsapp" id="logo-social"></a>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <ul class="navbar-nav align-items-end" style="margin-right: 15px;">
                 <li class="nav-item">
-                    <a href="mailto:qrs.salud@gmail.com"><img src="assets/gmail.png" alt="mail" id="logo-social"></a>
-                    <a href="https://www.facebook.com"><img src="assets/facebook.png" alt="facebook"
-                            id="logo-social"></a>
-                    <a href="https://www.instagram.com/qrssalud"><img src="assets/instagram.png" alt="instagram"
-                            id="logo-social"></a>
-                    <a href="https://api.whatsapp.com/send?phone=+541168563373&text=Hola me interesa saber más."><img
-                            src="assets/whatsapp.png" alt="whatsapp" id="logo-social"></a>
+                    <div class="logo-social-small-screen-navbar">
+                        <a href="mailto:qrs.salud@gmail.com"><img src="assets/gmail.png" alt="mail"
+                                id="logo-social"></a>
+                        <a href="https://www.facebook.com"><img src="assets/facebook.png" alt="facebook"
+                                id="logo-social"></a>
+                        <a href="https://www.instagram.com/qrssalud"><img src="assets/instagram.png" alt="instagram"
+                                id="logo-social"></a>
+                        <a href="https://api.whatsapp.com/send?phone=+541168563373&text=Hola me interesa saber más."><img
+                                src="assets/whatsapp.png" alt="whatsapp" id="logo-social"></a>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -64,11 +80,12 @@
             <div class="row align-items-end">
                 <div class="col-6">
                     <h1>
-                        <span>Servicios de Ambulancias</span><br>
-                        <span>particulares</span>
+                        <span>Servicio de Ambulancia</span><br>
+                        <span>particular</span>
                     </h1>
-                    <h3>Traslados de baja, media y alta complejidad, enfermería a domicilio, electrocardiograma a
-                        domicilio y cobertura de eventos deportivos, epectáculos y otros. </h3>
+                    <h3>Traslado de baja, media y alta complejidad<span class="hero-description-desktop">, enfermería a
+                            domicilio, electrocardiograma a
+                            domicilio y cobertura de eventos deportivos, epectáculos y otros. </span></h3>
                     <a href="https://api.whatsapp.com/send?phone=+541168563373&text=Hola me interesa saber más.">
                         <button>Realizar consulta</button></a>
                 </div>
@@ -132,20 +149,23 @@
             </div>
             <div class="about-us-row-photos">
                 <div class="container">
-                    <div class="row g-5">
-                        <div class="col-lg-6">
-                            <img src="assets/Ambulance-image-1.jpeg" class="img-fluid" alt="Ambulance image">
+                    <img src="assets/Collage-Photo.png" class="img-fluid" alt="">
+                    <!--
+                        <div class="row g-5">
+                            <div class="col-lg-6">
+                                <img src="assets/Ambulance-image-1.jpeg" class="img-fluid" alt="Ambulance image">
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="assets/Ambulance-image-2.jpeg" class="img-fluid" alt="Ambulance image">
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="assets/Ambulance-image-3.jpeg" class="img-fluid" alt="Ambulance image">
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="assets/Ambulance-image-4.jpeg" class="img-fluid" alt="Ambulance image">
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <img src="assets/Ambulance-image-2.jpeg" class="img-fluid" alt="Ambulance image">
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="assets/Ambulance-image-3.jpeg" class="img-fluid" alt="Ambulance image">
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="assets/Ambulance-image-4.jpeg" class="img-fluid" alt="Ambulance image">
-                        </div>
-                    </div>
+                        -->
                 </div>
             </div>
         </div>
@@ -186,7 +206,8 @@
                         <form target="_blank" action="https://formsubmit.co/qrs.salud@gmail.com" method="POST">
                             <div class="form-item">
                                 <label for="name-form">Nombre</label>
-                                <input type="text" class="form-control" id="name-form" name="name" placeholder="Tu nombre" required>
+                                <input type="text" class="form-control" id="name-form" name="name"
+                                    placeholder="Tu nombre" required>
                             </div>
                             <div class="form-item">
                                 <label for="num-form" class="form-label">Teléfono</label>
@@ -195,8 +216,8 @@
                             </div>
                             <div class="form-item">
                                 <label for="email-form" class="form-label">Mail</label>
-                                <input type="email" class="form-control" id="email-form" name="email" placeholder="tumail@gmail.com"
-                                    required>
+                                <input type="email" class="form-control" id="email-form" name="email"
+                                    placeholder="tumail@gmail.com" required>
                             </div>
                             <div class="form-item">
                                 <label for="message-form" class="form-label">Mensaje</label>
