@@ -90,17 +90,37 @@ a {
 
 .hero h1 {
   color: var(--variable-collection-background-color);
-  -webkit-text-stroke: 3px black;
-  paint-order: stroke fill;
+  text-shadow:
+   -1.5px -1.5px 0 #000,  
+    1.5px -1.5px 0 #000,
+    -1.5px 1.5px 0 #000,
+     1.5px 1.5px 0 #000;
   font-family: "../fonts/Poppins-Medium.ttf"
 }
 
 .hero h3 {
   color: var(--variable-collection-background-color);
-  -webkit-text-stroke: 4px black;
-  paint-order: stroke fill;
+  text-shadow:
+     -2px -2px 0 #000, 
+     2px -2px 0 #000, 
+     -2px 2px 0 #000,
+     2px 2px 0 #000;
   font-family: "../fonts/Poppins-Medium.ttf"
 }
+
+@supports (-webkit-text-stroke: 3px black){
+  .hero h1{
+    -webkit-text-stroke: 3px black;
+    paint-order: stroke fill;
+  }
+   
+  .hero h3{
+    -webkit-text-stroke: 4px black;
+    paint-order: stroke fill;
+  }
+
+}
+
 
 .hero a {
   display: flex;
