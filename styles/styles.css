@@ -81,7 +81,7 @@ a {
 
 /* --  Hero Section  --*/
 .hero {
-  background-image: url(../assets/Hero-background-image.png);
+  background-image: url(../assets/Hero-background-image.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -98,7 +98,7 @@ a {
   font-family: "../fonts/Poppins-Medium.ttf"
 }
 
-.hero h3 {
+.hero h2 {
   color: var(--variable-collection-background-color);
   text-shadow:
    -1.5px -1.5px 0 #000,  
@@ -110,8 +110,9 @@ a {
 
 .hero a {
   display: flex;
+  width: fit-content; 
+  margin: 0 auto 15px auto;
   justify-content: center;
-  margin-bottom: 15px;
 }
 
 .hero button {
@@ -138,7 +139,7 @@ a {
   text-align: center;
 }
 
-.our-services h3 {
+.our-services h2 {
   color: var(--variable-collection-background-color);
 }
 
@@ -278,7 +279,7 @@ a {
   }
 
   .hero {
-    background-image: url(../assets/Hero-background-image-2.png);
+    background-image: url(../assets/Hero-background-image-2.webp);
     padding-top: 550px;
   }
 
